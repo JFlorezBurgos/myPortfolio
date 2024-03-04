@@ -1,0 +1,134 @@
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 110rem;
+  /* padding: 2rem 10rem 20rem; */
+  padding: 5rem 10rem 10rem 10rem;
+}
+
+.title{
+  color: white;
+  font-size: 4rem;
+  font-weight: 750;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.card-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.card {
+  background: #262525;
+  color: #fff;
+  padding: 1.5rem;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  height: max-content;
+}
+
+.card-title-large {
+  font-family: fantasy, sans-serif;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: #1d1d1d;
+  transform: translateX(5rem);
+  transition: transform 2.5s;
+  width: max-content;
+}
+
+.card-title-small {
+  margin-bottom: 1rem;
+}
+
+.card-title-description {
+  line-height: 1.5;
+  max-height: 20px; /* Establece la altura máxima a "none" para mostrar todo el texto */
+  overflow: hidden; /* Oculta el texto que excede la altura máxima */
+  transition: max-height 0.5s; /* Añade una transición suave */
+}
+
+.expanded {
+  max-height: max-content; /* O cualquier otro valor que sea suficiente para mostrar todo el texto */
+}
+
+.read-more {
+  color: #30A7E1; /* Estiliza el botón como quieras */
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.read-more:hover{
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.card:hover .read-more{
+  color: #111827;
+}
+
+.card-cta {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+
+}
+
+.card:hover .card-cta {
+  background-color: #262525;
+}
+
+.card:hover .card-title-large {
+  transform: translateX(-115%);
+  color: #fff;
+}
+
+.card.project-1:hover{
+  background-color: #ddc809;
+}
+
+.card.project-2:hover{
+  background-color: #1DB954;
+}
+
+.card.project-3:hover{
+  background-color: #960909;
+}
+
+.card.project-4:hover{
+  background-color: #260c85;
+}
+
+.card-projects{
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 760px) {
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem 10rem 20rem; */
+    padding: 1rem 1rem 10rem 1rem;
+  }
+
+  .title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 750;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  .card-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 2.5rem;
+  }
+}

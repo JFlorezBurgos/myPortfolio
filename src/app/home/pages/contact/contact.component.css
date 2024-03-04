@@ -1,0 +1,68 @@
+.container{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 3rem 0 5rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form h1{
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.card{
+  padding: 5rem 20rem 5rem 20rem;
+  background-color: #262525;
+}
+
+.card textarea, input{
+  background-color: #ffffff;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 5rem 5rem 10rem 5rem;
+  }
+
+  .card{
+    padding: 10rem;
+    background-color: #262525;
+  }
+
+  .card textarea, input{
+
+    background-color: #ffffff;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form input{
+    width: 20rem;
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 760px) {
+  .card{
+    padding: 2rem;
+    background-color: #262525;
+  }
+}

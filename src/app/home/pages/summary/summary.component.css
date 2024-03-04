@@ -1,0 +1,64 @@
+.container {
+  color: white;
+  padding-bottom: 10rem;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.summary-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5rem 0 5rem;
+}
+
+.summary-content-experience {
+  margin: 0 0 0 2rem;
+  width: 300%;
+}
+
+.summary-content-wcid {
+  margin: 0 2rem 0 1rem;
+  width: 200%;
+}
+
+.summary-softwares {
+  margin-right: 15rem;
+  padding-right: 5rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .summary-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .summary-content-experience {
+    margin: 0 0 0 0;
+    width: fit-content;
+  }
+  .summary-content-wcid {
+    margin: 0 2rem 0 1rem;
+    width: fit-content;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .summary-softwares {
+    margin-right: 5rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+  .summary-hobbies-icon{
+    font-size: 1rem;
+  }
+}

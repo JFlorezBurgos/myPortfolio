@@ -1,0 +1,77 @@
+.img-contenido {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url(/assets/img/pc.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+}
+
+.presentation {
+  display: grid;
+  grid-template-columns: repeat(2);
+  gap: 1rem;
+  align-items: center;
+  padding: 3rem 20rem 20rem 5rem;
+}
+
+.presentation-name {
+  text-align: left;
+  padding-left: 4rem;
+}
+
+.presentation-name h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+}
+
+.presentation-name h4 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 4rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.presentation-name h5 {
+  font-size: 1.5rem;
+  font-weight: 350;
+  color: #fff;
+  line-height: 3;
+}
+
+.btn-home {
+  display: inline-block;
+  padding: 10px 35px;
+  color: #ffffff;
+  background-color: #012643;
+  margin: 1rem 1rem 0 0;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.btn-home:hover {
+  background-color: #578CAC;
+}
+
+@media screen and (max-width: 768px) {
+  .img-contenido {
+    background-size: cover;
+    background-position: top;
+  }
+
+  .presentation {
+    grid-template-columns: repeat(1);
+    padding: 3rem 1rem 30rem 1rem;
+  }
+
+  .presentation-name {
+    text-align: center;
+    padding-left: 0;
+  }
+}

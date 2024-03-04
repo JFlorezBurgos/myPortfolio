@@ -1,0 +1,21 @@
+<div class="container">
+<div class="portfolio-content">
+  <h1 class="title animate__animated animate__fadeIn">My Projects</h1>
+
+    <div class="card-projects">
+
+
+      <div *ngFor="let project of projects; let i = index"   class="card project-{{i+1}} animate__animated animate__fadeInUp animate__slow">
+        <h2 class="card-title-large">{{ project.title }}</h2>
+        <h3 class="card-title-small">{{ project.title }}</h3>
+        <p class="card-title-description"   [ngClass]="{'expanded': project.isExpanded}" #cardDescription>{{ project.description}}</p>
+        <button class="read-more"  (click)="toggleExpanded(i)"> {{ project.isExpanded ? 'Ver menos' : 'Ver más' }}</button>
+        <app-speed-dial [githubLink]="project.linkGitHub" [pageLink]="project.pageLink"></app-speed-dial>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<router-outlet />
