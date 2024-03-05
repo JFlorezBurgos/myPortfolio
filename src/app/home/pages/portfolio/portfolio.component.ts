@@ -19,6 +19,13 @@ export default class PortfolioComponent {
       isExpanded: false
     },
     {
+      title: 'CardApp Unicordoba',
+      description: 'This project presents a digital solution for the management of student IDs at the "Universidad de Córdoba", including a mobile application and a web page. The administrative page of the application was created in Angular, highlighting my expertise as a frontend developer. By utilizing a cloud-based architecture, flexibility, scalability, and security in the process are ensured. The goal is to enhance the student experience and optimize institutional efficiency in ID management.',
+      linkGitHub:'https://github.com/JFlorezBurgos/card-app-unicordoba',
+      pageLink:'https://repositorio.unicordoba.edu.co/entities/publication/80971971-deca-486f-95d4-260ece2e57e8',
+      isExpanded: false
+    },
+    {
       title: 'Spotify Clone',
       description: "This project involved creating a simplified replica of Spotify using HTML, CSS, and JavaScript. The main idea was to design an interface similar to Spotify's to explore how the platform would look and feel. Although the project was basic, it allowed for practice and familiarity with the web technologies used.",
       linkGitHub:'https://github.com/JFlorezBurgos/clone-spotify-jg',
@@ -26,17 +33,12 @@ export default class PortfolioComponent {
       isExpanded: false
     },
     {
-      title: 'Project 3',
-      description: 'Description Project 3',
-      linkGitHub:'#',
-      pageLink:'#',
-      isExpanded: false },
-    {
       title: 'Project 4',
-      description: 'Description Project 3',
+      description: '...',
       linkGitHub:'#',
       pageLink:'#',
-      isExpanded: false },
+      isExpanded: false
+    },
 
   ];
 
