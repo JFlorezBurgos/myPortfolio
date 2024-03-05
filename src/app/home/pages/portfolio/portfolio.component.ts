@@ -15,7 +15,7 @@ export default class PortfolioComponent {
       title: 'My Portfolio',
       description: 'My portfolio is a visual representation of my work as a frontend developer, created using Angular, Tailwind, and CSS. Angular provided me with a robust structure to organize my code and manage application logic. I used Tailwind to streamline the design process, leveraging its predefined classes to quickly style the elements of my portfolio. Additionally, I customized the styling using CSS to tailor it to my preferences and create a unique look. The result is an interactive and visually appealing portfolio that showcases my projects and skills in a clear and concise manner.',
       linkGitHub:'https://github.com/JFlorezBurgos/myPortfolio',
-      pageLink:'https://juanflorezburgos.netlify.app/portfolio',
+      pageLink:'#',
       isExpanded: false
     },
     {
@@ -27,13 +27,13 @@ export default class PortfolioComponent {
     },
     {
       title: 'Project 3',
-      description: 'Description Project 4',
+      description: 'Description Project 3',
       linkGitHub:'#',
       pageLink:'#',
       isExpanded: false },
     {
       title: 'Project 4',
-      description: 'Description Project 4',
+      description: 'Description Project 3',
       linkGitHub:'#',
       pageLink:'#',
       isExpanded: false },
