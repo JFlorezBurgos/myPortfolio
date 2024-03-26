@@ -16,8 +16,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5rem;
-  padding-left: 10rem;
-  padding-bottom: 5rem;
+  padding: 5rem;
 }
 
 .card {
