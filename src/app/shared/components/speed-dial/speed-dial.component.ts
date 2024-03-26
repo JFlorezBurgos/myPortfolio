@@ -10,5 +10,6 @@ import { Component, Input } from '@angular/core';
 export class SpeedDialComponent {
   @Input() githubLink: any;
   @Input() pageLink: any;
+  @Input() pageBook: any;
 
 }

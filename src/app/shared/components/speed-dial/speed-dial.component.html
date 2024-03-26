@@ -1,14 +1,14 @@
 <div class="relative">
-  <div class="relative  flex justify-end">
-    <div class="group">
-      <button class="relative h-12 max-h-[48px] w-12 max-w-[48px] select-none rounded-full bg-gray-900 text-center align-middle font-sans text-sm font-medium uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+  <div class="sticky flex justify-end">
+    <div class="group static">
+      <button class="relative h-12  w-12 select-none rounded-full bg-gray-900 text-center align-middle font-sans text-sm font-medium uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
         <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 transition-transform group-hover:rotate-45">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
           </svg>
         </span>
       </button>
-      <div class="absolute top-[-145px] right-[-12px]  hidden w-max flex-col items-center gap-1 p-0.5 group-hover:flex ">
+      <div class="absolute bottom-[48px] right-[-13px] hidden flex-col items-center gap-1 p-0.5 group-hover:flex ">
         <div *ngIf="githubLink">
           <a [href]="githubLink" target="_blank">
             <button class="m-0.5 flex h-16 min-h-[48px] w-16 min-w-[48px] flex-col items-center justify-center gap-1 rounded-full bg-gray-900 p-1 font-normal transition-transform duration-300 ease-in-out hover:scale-110 focus:scale-110 active:scale-100">
@@ -21,6 +21,14 @@
           <a [href]="pageLink" target="_blank">
             <button class="m-0.5 flex h-16 min-h-[48px] w-16 min-w-[48px] flex-col items-center justify-center gap-1 rounded-full bg-gray-900 p-1 font-normal transition-transform duration-300 ease-in-out hover:scale-110 focus:scale-110 active:scale-100">
               <i class="fa-solid fa-link"></i>
+              <p class="block font-sans text-xs antialiased font-normal text-blue-gray-900">Page</p>
+            </button>
+          </a>
+        </div>
+        <div *ngIf="pageBook">
+          <a [href]="pageBook" target="_blank">
+            <button class="m-0.5 flex h-16 min-h-[48px] w-16 min-w-[48px] flex-col items-center justify-center gap-1 rounded-full bg-gray-900 p-1 font-normal transition-transform duration-300 ease-in-out hover:scale-110 focus:scale-110 active:scale-100">
+             <i class="fa-solid fa-book"></i>
               <p class="block font-sans text-xs antialiased font-normal text-blue-gray-900">Page</p>
             </button>
           </a>

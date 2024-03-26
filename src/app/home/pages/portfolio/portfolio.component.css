@@ -1,9 +1,6 @@
 .portfolio-content {
   display: flex;
-  flex-direction: column;
-  max-width: 110rem;
-  /* padding: 2rem 10rem 20rem; */
-  padding: 5rem 10rem 10rem 10rem;
+  justify-content: center;
 }
 
 .title{
@@ -19,6 +16,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5rem;
+  padding-left: 10rem;
+  padding-bottom: 5rem;
 }
 
 .card {
@@ -98,11 +97,11 @@
 }
 
 .card.project-3:hover{
-  background-color: #01C38E;
+  background-color: #41AEC1;
 }
 
 .card.project-4:hover{
-  background-color: #41AEC1;
+  background-color:  #01C38E;
 }
 
 .card-projects{
@@ -110,12 +109,12 @@
 }
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1024px) {
   .portfolio-content {
     display: flex;
     flex-direction: column;
     /* padding: 2rem 10rem 20rem; */
-    padding: 1rem 1rem 10rem 1rem;
+    justify-content: center;
   }
 
   .title{
@@ -128,7 +127,9 @@
   }
   .card-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-gap: 2.5rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
+    grid-gap: 1rem;
+    padding: 0.5rem 0.5rem 5rem 0.5rem;
+
   }
 }
